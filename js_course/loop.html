@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<h3>
+    Loops and High order array methods in JavaScript
+
+</h3>
+
+<body>
+    <script>
+        //For loop
+        for (let i = 0; i <= 10; i++) {
+            console.log(`For loop numbers:${i}`)
+            //document.write(`For loop numbers:${i}`)
+        }
+        //While Loop
+        let j = 1;
+        while (j < 10) {
+            console.log(`while loop Number: ${j}`)
+            j++;
+        }
+        // high order array methods-forEach, map, filter
+
+        const todos = [
+            {
+                id: 1,
+                text: 'pay electicity bill',
+                iscompleted: true
+            },
+            {
+                id: 2,
+                text: 'Meeting',
+                iscompleted: true
+            },
+            {
+                id: 1,
+                text: 'Appoitment',
+                iscompleted: false
+            },
+
+        ]
+        //for each
+        todos.forEach(function(todo){
+    
+            console.log(todo.text)
+        })
+        //map-return array
+        const todotext = todos.map(function(todo){
+            return todo.text
+        })
+        console.log(todotext)
+
+        //filter
+        const todocompleted = todos.filter(function(todo){
+            return todo.iscompleted===true
+        })
+        console.log(todocompleted)
+    </script>
+
+</body>
+
+</html>

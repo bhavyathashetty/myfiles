@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+
+<body>
+    <h3 id="demo"></h3>
+    <!-- <input type="button" value="Back" onclick="goBack()"> -->
+    <script>
+        document.getElementById("demo").innerHTML =
+            "Page location is " + window.location.href;//displays url of the current page
+        document.getElementById("demo").innerHTML =
+            "Page hostname is " + window.location.hostname;//internet host of current page
+       /* function goBack() {
+            window.history.back()
+        }*/
+    </script>
+</body>
+
+</html>

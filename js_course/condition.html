@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals</title>
+</head>
+<body>
+    <h3>Conditional Statements in JS</h3>
+    <script>
+        const x = 10;
+        const y = 2;
+
+        // single conditions
+        if(x===10){
+            console.log('x is 10')
+        }else if(x>10){
+            console.log(' x greater than 10')
+        }else{
+            console.log('x is less than 10')
+        }
+
+        // multiple conditons
+        if(x>5||y>10){
+            console.log('x is more then 5 or y is more than 10')
+        }
+
+        //ternary operatorrs
+        const z = 20
+        const color = z>10?'red':'pink'
+        console.log(color)
+
+        //Switch 
+        switch(color){
+            case 'red':
+            console.log('color is red')
+            break
+            case 'pink':
+            console.log('color is pink')
+            break
+            default:
+            console.log('color is not red or pink')
+        }
+    </script>
+</body>
+</html>
